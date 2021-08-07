@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    overflow-x: hidden
+}
+.nav{
+    background: rgb(18, 61, 141);
+    height: 100%;
+    width:300px;
+    position: fixed;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.nav.active{
+    width: 60px;
+}
+.nav ul{
+
+
+    
+}
+.nav ul li{
+    list-style: none;
+    width: 100%;
+}
+.nav ul li:hover {
+    background: cornflowerblue;
+} 
+.nav ul li:nth-child(1){
+    margin-bottom: 20px;
+}
+.nav ul li:nth-child(1):hover{
+    background: transparent;
+}
+.nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    display: flex;
+}
+.icon{
+    position: relative;
+    display: block;
+    line-height: 60px;
+    height: 60px;
+    min-width: 60px;
+    text-align: center;
+    
+}
+.icon .fas{
+    font-size: 24px;
+  
+}
+.title {
+    position: relative;
+    display: block;
+    padding: 0px 10px;
+    line-height: 60px;
+    height: 60px;
+    min-width: 60px;
+    white-space: nowrap;
+}
+.main{
+    position: absolute;
+    left: 300px;
+    width: calc( 100% - 300px);
+    background: rgba(236, 234, 234, 0.8);
+    height: 100%;
+    transition: 0.5s;
+}
+.main.active{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+.main .topBar{
+    padding: 0 10px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .topBar .toggle{
+   position: relative;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.main .topBar .toggle .fas{
+    font-size: 24px;
+    line-height: 40px;
+    width: 100%;
+    height: 100%;
+}
+.main .topBar .search{
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+.main .topBar .search input{
+    width: 100%;
+    height: 35px;
+    border-radius: 40px;
+    padding: 5px 30px;
+    padding-left: 35px;
+    outline: none;
+    border: 1px solid #333;
+}
+.main .topBar .search .fas{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 15px;
+}
+.main .topBar .user{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.main .topBar .user img{
+    position: absolute;
+    top: 0 px;
+    left: 0 px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardBox{
+position: relative;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-gap:20px;
+width:100%;
+padding: 10px;
+}
+.card{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 15px;
+}
+.card .number{
+    font-size: 27px;
+    font-weight: 600;
+}
+.card .cardName{
+    font-size: 20px;
+    color: rgb(101, 104, 107);
+}
+
+.card .cardIcon{
+    color: rgb(17, 78, 158);
+    font-size: 25px;
+}
